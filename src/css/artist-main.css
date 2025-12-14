@@ -1,0 +1,252 @@
+.reddit-mono-fontreddit {
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  font-style: normal;
+}
+@font-face {
+  font-family: Power;
+  src: url("../fonts/PowerGroteskTrial-Medium.woff");
+  }
+
+@font-face {
+  font-family: Place-regular;
+  src: url("../fonts/Place-Regular-Trial.otf");
+}
+
+@font-face {
+  font-family: Place-bold-extra;
+  src: url("../fonts/Place-BoldExtra-Trial.otf");
+}
+@font-face {
+  font-family: Place-regular-extra;
+  src: url("../fonts/Place-RegularExtra-Trial.otf");
+}
+@font-face {
+  font-family: Place-light-extra;
+  src: url("../fonts/Place-LightExtra-Trial.otf");
+}
+@font-face {
+  font-family: RedditMono-Bold;
+  src: url("../fonts/RedditMono-Bold.ttf");
+}
+@font-face {
+  font-family: RedditMono-Medium;
+  src: url("../fonts/RedditMono-Medium.ttf");
+}
+@font-face {
+  font-family: RedditMono-Regular;
+  src: url("../fonts/RedditMono-Regular.ttf");
+}
+@font-face {
+  font-family: RedditMono-SemiBold;
+  src: url("../fonts/RedditMono-SemiBold.ttf");
+}
+@font-face {
+  font-family: WorkSans-Medium;
+  src: url("../fonts/WorkSans-Medium.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+    margin: 0;
+    background: #a8a8a8;
+    color: black;
+    font-family: inherit; /* keep your own typeface */
+}
+
+/* NAVIGATION */
+.nav {
+    background: #000;
+    color: white;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.logo {
+  position: absolute;
+  left: 40px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 93px;
+  margin-top: 65;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-family: Power;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover, nav a.active {
+  color: #D0121B;
+}
+
+.account-icon {
+  color: #D0121B;
+  position: absolute;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.account-icon img {
+  height: 25px; 
+}
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.text-block {
+    width: 45%;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-img {
+    width: 45%;
+    text-align: center;
+    position: relative;
+}
+
+.hero-img img {
+    width: 100%;
+    background: #000;
+}
+
+.slider-arrows {
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-arrows span {
+    cursor: pointer;
+}
+
+/* RED BARS */
+.red-strip {
+    width: 100%;
+    background: #D0121B;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* VINYL SECTION */
+.vinyl {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    position: relative;
+}
+
+.vinyl-text {
+    width: 45%;
+}
+
+.vinyl-img img {
+    width: 350px;
+}
+
+.side {
+    top: 50%;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* SHOP GRID */
+.shop-grid {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.item {
+    text-align: center;
+    max-width: 200px;
+}
+
+.item img {
+    width: 200px;
+    height: 200px;
+    background: #000;
+}
+
+.buy {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* NEWS STRIP */
+.news {
+    margin-top: 50px;
+}
+
+/* TOUR SECTION */
+.tour {
+    text-align: center;
+    padding: 30px;
+}
+
+.tour img {
+    width: 70%;
+    background: #000;
+}
+
+.tour-caption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    color: #a8a8a8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
