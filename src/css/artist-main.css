@@ -116,7 +116,8 @@ body {
 
 /* ================= ARTIST HERO ================= */
 .artist-hero {
-  margin-top: 80px;
+  margin-top: 0px;
+  padding-top: 0px; /* control spacing safely */
 }
 
 .artist-hero-inner {
@@ -142,7 +143,7 @@ body {
   line-height: normal;
   text-shadow: 3px 4px 0 #D0121B;
   text-transform: uppercase;
-  margin-top: -35px;
+  margin-top: 15px;
   /* margin-left: 16px; */
   margin-bottom: 100px;
   margin-left: -35px;
@@ -159,12 +160,16 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: -70px;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 0; /* ← FIX */
 }
 
 .artist-image img {
-  max-height: 600px;
+  width: 100%;
+  max-width: none;      /* IMPORTANT */
+  height: auto;
+  display: block;
 }
 
 /* ================= ARROWS ================= */
@@ -188,7 +193,26 @@ body {
   right: 20px;
 }
 
-/* ================= STRIPS ================= */
+/* ================= STRIS ================= */
+.strapshorten {
+  height: 69px;
+  background: #D0121B;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin: -160px 0;
+}
+
+
+.strap-text {
+  display: flex;
+  gap: 80px;
+  font-size: 55px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-family: WorkSans-Medium;
+}
+
 .strip {
   height: 69px;
   background: #D0121B;
@@ -368,7 +392,7 @@ body {
 
 /* ================= OCEAN STRIP SPACING ================= */
 
-.ocean-strip {
+.ocean-strap {
   margin-bottom: 0;
 }
 
@@ -414,7 +438,7 @@ body {
 
 @media (max-width: 1200px) {
   .artist-text h1 {
-    font-size: 70px;
+    font-size: 39px;
   }
 
   .merch-grid {
@@ -423,10 +447,16 @@ body {
 }
 
 @media (max-width: 900px) {
+ .artist-text h1 {
+    font-size: 50px;
+  }
   .artist-text {
     padding: 60px 60px 60px 100px;
   }
-
+    .artist-hero {
+  margin-top: 200px;
+  padding-top: 20px; /* control spacing safely */
+}
   .album-inner {
     width: 85%;
   }
