@@ -395,8 +395,6 @@ body {
 
 .footer-nav {
   display: flex;
-  justify-content: center;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;

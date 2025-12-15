@@ -392,10 +392,10 @@ footer {
 
 .footer-nav {
   display: flex;
-  gap: 616px;
   padding: 20px 40px;   
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
 
 }
 
@@ -414,6 +414,7 @@ footer {
 .DO {
   width: 700px;       
   height: 700px;
+  
       
 }
 
