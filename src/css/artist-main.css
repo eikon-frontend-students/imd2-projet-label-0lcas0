@@ -47,206 +47,409 @@
   src: url("../fonts/WorkSans-Medium.ttf");
 }
 
+/* ================= RESET ================= */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-a {
-  color: inherit;
+img {
+  display: block;
+  max-width: 100%;
 }
 
 body {
-    margin: 0;
-    background: #a8a8a8;
-    color: black;
-    font-family: inherit; /* keep your own typeface */
+  background: #A8A8A8;
+  color: #000;
+  font-family: sans-serif; /* replace later */
 }
 
-/* NAVIGATION */
-.nav {
-    background: #000;
-    color: white;
-    padding: 10px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.nav nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
+/* ================= HEADER ================= */
+.site-header {
+  height: 100px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .logo {
   position: absolute;
   left: 40px;
-  display: flex;
-  align-items: center;
+}
+
+.logo img {
   height: 60px;
 }
 
-nav ul {
+.main-nav ul {
   list-style: none;
   display: flex;
-  gap: 93px;
-  margin-top: 65;
-  padding: 0;
+  gap: 90px;
+  margin-top: 65px;
 }
 
-nav a {
-  color: white;
+.main-nav a {
   text-decoration: none;
-  font-family: Power;
+  color: #fff;
   font-size: 20px;
-  font-weight: 500;
   transition: color 0.2s ease;
+  font-family: power;
 }
 
-nav a:hover, nav a.active {
+.main-nav a:hover,
+.main-nav a.active {
   color: #D0121B;
 }
 
-.account-icon {
-  color: #D0121B;
+/* ================= GUIDE LINE ================= */
+.line-vertical {
   position: absolute;
-  right: 40px;
+  top: 100px;
+  left: 40px;
+  width: 1px;
+  height: 100%;
+  background: #D0121B;
+}
+
+/* ================= ARTIST HERO ================= */
+.artist-hero {
+  margin-top: 80px;
+}
+
+.artist-hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 700px;
+}
+
+.artist-text {
+  background: #A8A8A8;
+  padding: 0px 80px 80px 60px;
+  max-width: 620px;
+  margin-left: -10px;
+  
+}
+
+.artist-text h1 {
+  font-size: 47px;
+  font-family: place-bold-extra;
+  color: #000;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-shadow: 3px 4px 0 #D0121B;
+  text-transform: uppercase;
+  margin-top: -35px;
+  /* margin-left: 16px; */
+  margin-bottom: 100px;
+  margin-left: -35px;
+}
+
+.artist-text p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  font-family: RedditMono-Regular;
+}
+
+.artist-image {
+  position: relative;
   display: flex;
   align-items: center;
-  margin-top: 60px;
+  justify-content: center;
+  margin-top: -70px;
 }
 
-.account-icon img {
-  height: 25px; 
-}
-/* HERO SECTION */
-.hero {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
+.artist-image img {
+  max-height: 600px;
 }
 
-.text-block {
-    width: 45%;
+/* ================= ARROWS ================= */
+.arrow {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #000;
 }
 
-.title {
-    font-size: 36px;
-    margin-bottom: 20px;
+.artist-image .arrow-left {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
 }
 
-.hero-img {
-    width: 45%;
-    text-align: center;
-    position: relative;
+.artist-image .arrow-right {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 
-.hero-img img {
-    width: 100%;
-    background: #000;
+/* ================= STRIPS ================= */
+.strip {
+  height: 69px;
+  background: #D0121B;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin: 160px 0;
 }
 
-.slider-arrows {
-    position: absolute;
-    bottom: -25px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.strip-text {
+  display: flex;
+  gap: 80px;
+  font-size: 55px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-family: WorkSans-Medium;
 }
 
-.slider-arrows span {
-    cursor: pointer;
+/* ================= ALBUM SECTION ================= */
+.album-section {
+  position: relative;
+  margin: 200px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* RED BARS */
-.red-strip {
-    width: 100%;
-    background: #D0121B;
-    color: black;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    font-weight: bold;
-    letter-spacing: 2px;
+.album-inner {
+  background: #000;
+  width: 75%;
+  height: 620px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 60px;
+  gap: 40px;
 }
 
-/* VINYL SECTION */
-.vinyl {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-    position: relative;
+.album-text h2 {
+  color: #D0121B;
+  text-shadow: 2px 3px 0 #636363;
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-family: place-regular-extra;
 }
 
-.vinyl-text {
-    width: 45%;
+.album-text p {
+  color: #D0121B;
+  font-size: 14px;
+  line-height: 1.7;
+  font-family: redditmono-regular;
 }
 
-.vinyl-img img {
-    width: 350px;
+.album-cover {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
 }
 
-.side {
-    top: 50%;
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.album-cover img {
+  max-width: 260px;
+  width: 100%;
+  max-width: 620px;
+  height: auto;
 }
 
-/* SHOP GRID */
-.shop-grid {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px 0;
+.album-cover .vinyl {
+  position: absolute;
+  right: -80px;
+  max-width: 220px;
 }
 
-.item {
-    text-align: center;
-    max-width: 200px;
+.album-section .arrow-left {
+  position: absolute;
+  left: 40px;
 }
 
-.item img {
-    width: 200px;
-    height: 200px;
-    background: #000;
+.album-section .arrow-right {
+  position: absolute;
+  right: 40px;
 }
 
-.buy {
-    display: block;
-    margin-top: 10px;
-    cursor: pointer;
-    text-decoration: underline;
+/* ================= MERCH ================= */
+.merch-section {
+  margin: 200px 0 300px;
 }
 
-/* NEWS STRIP */
-.news {
-    margin-top: 50px;
+.merch-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 120px;
+  width: 80%;
+  margin: 0 auto;
 }
 
-/* TOUR SECTION */
-.tour {
-    text-align: center;
-    padding: 30px;
+.product img {
+  margin-bottom: 30px;
+  width: 100%;
+  height: auto;
 }
 
-.tour img {
-    width: 70%;
-    background: #000;
+.product {
+  max-width: 620px; 
 }
 
-.tour-caption {
-    margin-top: 10px;
-    font-weight: bold;
+.product-title {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-family: redditmono-bold;
 }
 
-/* FOOTER */
-footer {
-    background: #000;
-    color: #a8a8a8;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
+.product-desc {
+  font-size: 13px;
+  margin-bottom: 16px;
+  font-family: redditmono-regular;
+}
+
+.buy-link {
+  text-decoration: none;
+  font-size: 13px;
+  display: inline-block;
+  float: right;
+  color:#000000
+}
+
+/* ================= NEWS / TOUR ================= */
+
+.news-section {
+  position: relative;
+  width: 75%;
+  margin: 200px auto 260px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.news-inner {
+  width: 100%;
+  text-align: left;
+}
+
+.news-inner img {
+  width: 100%;
+  display: block;
+}
+
+.news-caption {
+  margin-top: 18px;
+}
+
+.news-title {
+  font-size: 26px;
+  font-family: redditmono-semibold;
+}
+
+.news-desc {
+  font-size: 20px;
+  font-family: redditmono-regular;
+}
+
+/* arrows positioning */
+.news-section .arrow-left,
+.news-section .arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.news-section .arrow-left {
+  left: -45px;
+}
+
+.news-section .arrow-right {
+  right: -45px;
+}
+
+/* ================= OCEAN STRIP SPACING ================= */
+
+.ocean-strip {
+  margin-bottom: 0;
+}
+
+/* ================= DESKTOP @ 600px ================= */
+@media (max-width: 600px) {
+  .news-section {
+    width: 85%;
+  }
+
+  .news-section .arrow-left {
+    left: -30px;
+  }
+
+  .news-section .arrow-right {
+    right: -30px;
+  }
+}
+
+/* ================= FOOTER ================= */
+.site-footer {
+  background: #000;
+  padding: 40px 0;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 40px;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-top: -43px;
+  font-size: 12px;
+  font-family: redditmono-medium;
+}
+
+/* ================= MEDIA QUERIES ================= */
+/* DESKTOP RESPONSIVE ONLY — NO MOBILE STACKING */
+
+@media (max-width: 1200px) {
+  .artist-text h1 {
+    font-size: 70px;
+  }
+
+  .merch-grid {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 900px) {
+  .artist-text {
+    padding: 60px 60px 60px 100px;
+  }
+
+  .album-inner {
+    width: 85%;
+  }
+}
+
+/* KEEP DESKTOP LAYOUT AT 600px */
+@media (max-width: 600px) {
+  .artist-hero-inner,
+  .album-inner,
+  .merch-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+    .news-section {
+    width: 85%;
+  }
+
+  .news-section .arrow-left {
+    left: -30px;
+  }
+
+  .news-section .arrow-right {
+    right: -30px;
+  }
 }

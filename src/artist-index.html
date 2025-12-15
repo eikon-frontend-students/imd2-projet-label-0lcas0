@@ -1,113 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>Slowdive – Artist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/artist-main.css" />
-  <title>Document</title>
 </head>
-<body>
-  <header>
+
+<body class="artist-page">
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
     <div class="logo">
-      <img src="assets/logo.png" alt="Logo" />
+      <img src="./assets/logo.png" alt="Dead Oceans logo">
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">News</a></li>
+        <li><a href="#" class="active">Artistes</a></li>
+        <li><a href="#">Tours</a></li>
+        <li><a href="#">Shop</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- vertical red guide line -->
+  <div class="line-vertical"></div>
+
+  <main>
+
+    <!-- ================= ARTIST HERO ================= -->
+    <section class="artist-hero">
+      <div class="artist-hero-inner">
+
+        <!-- LEFT TEXT BLOCK -->
+        <div class="artist-text">
+          <h1>SLOWDIVE</h1>
+
+          <p>
+            Slowdive formed in Reading, Berkshire, England, in late 1989.
+            The core of the band were childhood friends Rachel Goswell
+            and Neil Halstead, both on vocals and guitar.
+          </p>
+
+          <p>
+            The name “Slowdive” was inspired by a dream that Nick Chaplin
+            had plus a conversation with Goswell that referenced a song
+            titled “Slowdive” by Siouxsie and the Banshees.
+          </p>
+
+          <p>
+            They released some EPs and built a reputation tied to the
+            burgeoning “shoegaze” scene characterised by textured guitars,
+            ethereal vocals and a somewhat introspective atmosphere.
+          </p>
+        </div>
+
+        <!-- RIGHT IMAGE BLOCK -->
+        <div class="artist-image">
+          <button class="arrow arrow-left">&lt;</button>
+
+          <img src="./assets/album-head.png" alt="Slowdive artist visual">
+
+          <button class="arrow arrow-right">&gt;</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SHOP STRIP ================= -->
+    <div class="strip strip-red">
+      <div class="strip-text">
+        <span>SHOP</span><span>SHOP</span><span>SHOP</span><span>SHOP</span>
+        <span>SHOP</span><span>SHOP</span><span>SHOP</span>
+      </div>
+    </div>
+
+    <!-- ================= ALBUM SECTION ================= -->
+    <section class="album-section">
+
+      <button class="arrow arrow-left">&lt;</button>
+
+      <div class="album-inner">
+
+        <div class="album-text">
+          <h2>SLOWDIVE – Pygmalion</h2>
+          <p>
+            Music fans largely associated the breakup of Slowdive in 1995 with the disappearance of the shoegazing genre. Its last sign of life was Pygmalion (before their reunion in 2014), and after Just For A Day and Souvlaki, it was a completely different and more abstract album — and one of the most important shoegaze albums of all time.
+            While the band had tried to incorporate more structure into their songs on Souvlaki, they began integrating more elements of ambient electronic music on Pygmalion. Tracks like “Blue Skied An’ Clear” and “Crazy For You” show that the songs are still there, somewhere — they’re simply buried under sounds more abstract than before.
+          </p>
+        </div>
+
+    <div class="album-cover">
+        <img src="./assets/slowdive-onlyvinyle.png" alt="Pygmalion album cover">
+    </div>
+
+
       </div>
 
-      <nav>
-        <ul>
-          <li><a href="#">News</a></li>
-          <li><a href="#" class="active">Artists</a></li>
-          <li><a href="#">Tours</a></li>
-          <li><a href="#">Shop</a></li>
-        </ul>
-      </nav>
-      <div class="account-icon">
-        <img src="assets/account-icon.png" alt="Account" />
-    </div>
-  </header>
-  <section class="hero">
-    <div class="text-block">
-        <h1 class="title">SLOWDIVE</h1>
-        <p>
-            Slowdive formed in Reading, Berkshire, England, in late 1989...
-            <!-- you can paste the full text if needed -->
-        </p>
-    </div>
+      <button class="arrow arrow-right">&gt;</button>
+    </section>
 
-    <div class="hero-img">
-        <!-- Replace PNG here -->
-        <img src="PLACEHOLDER-HERO.png" alt="album">
-        <div class="slider-arrows">
-            <span>&lt;</span><span>&gt;</span>
+    <!-- ================= MERCH SECTION ================= -->
+    <section class="merch-section">
+
+      <div class="merch-grid">
+
+        <div class="product">
+          <img src="./assets/slowdive_tee_red.png" alt="">
+          <p class="product-title">Slowdive Tee “just for a day”</p>
+          <p class="product-desc">Details product, confection year, what its made of, etc…</p>
+          <a href="#" class="buy-link">buy</a>
         </div>
-    </div>
-</section>
 
-<!-- RED STRIP BAR -->
-<div class="red-strip">
-    <span>SHOP</span><span>SHOP</span><span>SHOP</span><span>SHOP</span>
-    <span>SHOP</span><span>SHOP</span><span>SHOP</span><span>SHOP</span>
-</div>
+        <div class="product">
+          <img src="./assets/slowdive_tee_yellow.png" alt="">
+          <p class="product-title">Slowdive yellow Tee</p>
+          <p class="product-desc">Details product, confection year, what its made of, etc…</p>
+          <a href="#" class="buy-link">buy</a>
+        </div>
 
-<!-- VINYL SECTION -->
-<section class="vinyl">
-    <div class="vinyl-text">
-        <h1 class="title">SLOWDIVE - Pygmalion</h1>
-        <p>
-            Music fans largely associated the breakup of Slowdive in 1995...
-        </p>
-    </div>
+        <div class="product">
+          <img src="./assets/slowdive_tee_souvlaki.png" alt="">
+          <p class="product-title">Slowdive Tee “souvlaki”</p>
+          <p class="product-desc">Details product, confection year, what its made of, etc…</p>
+          <a href="#" class="buy-link">buy</a>
+        </div>
 
-    <div class="vinyl-img">
-        <!-- Replace with your vinyl PNG -->
-        <img src="PLACEHOLDER-VINYL.png" alt="vinyl">
-    </div>
+      </div>
+    </section>
 
-    <div class="slider-arrows side">
-        <span>&lt;</span><span>&gt;</span>
-    </div>
-</section>
-
-<!-- SHOP T-SHIRTS -->
-<section class="shop-grid">
-
-    <div class="item">
-        <img src="PLACEHOLDER-TSHIRT.png" alt="tshirt">
-        <h3>Slowdive Tee “just for a day”</h3>
-        <a class="buy">buy</a>
+    <!-- ================= NEWS STRIP ================= -->
+    <div class="strip strip-red">
+      <div class="strip-text">
+        <span>NEWS</span><span>NEWS</span><span>NEWS</span><span>NEWS</span>
+        <span>NEWS</span><span>NEWS</span>
+      </div>
     </div>
 
-    <div class="item">
-        <img src="PLACEHOLDER-TSHIRT.png" alt="tshirt">
-        <h3>Slowdive yellow Tee</h3>
-        <a class="buy">buy</a>
+    <!-- ================= NEWS / TOUR SECTION ================= -->
+    <section class="news-section">
+
+      <button class="arrow arrow-left">&lt;</button>
+
+      <div class="news-inner">
+        <img src="./assets/Slowdive-news-tour.png" alt="Slowdive tour">
+
+        <div class="news-caption">
+          <p class="news-title"><strong>Slowdive 2026 tour, Spain</strong></p>
+          <p class="news-desc">Book your ticket from now on</p>
+        </div>
+      </div>
+
+      <button class="arrow arrow-right">&gt;</button>
+
+    </section>
+
+    <!-- ================= OCEAN STRIP ================= -->
+    <div class="strip strip-red ocean-strip">
+      <div class="strip-text">
+        <span>THE OCEAN IS DEAD</span>
+        <span>THE OCEAN IS DEAD</span>
+        <span>THE OCEAN IS DEAD</span>
+      </div>
     </div>
+  </main>
 
-    <div class="item">
-        <img src="PLACEHOLDER-TSHIRT.png" alt="tshirt">
-        <h3>Slowdive yellow Tee</h3>
-        <a class="buy">buy</a>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-nav">
+      <a href="#">about</a>
+      <a href="#">contact us</a>
+      <a href="#">policy</a>
     </div>
-
-    <div class="item">
-        <img src="PLACEHOLDER-TSHIRT.png" alt="tshirt">
-        <h3>Slowdive Tee “souvlaki”</h3>
-        <a class="buy">buy</a>
-    </div>
-
-</section>
-
-<!-- RED NEWS STRIP -->
-<div class="red-strip news">
-    <span>NEWS</span><span>NEWS</span><span>NEWS</span><span>NEWS</span>
-    <span>NEWS</span><span>NEWS</span><span>NEWS</span><span>NEWS</span>
-</div>
-
-<!-- TOUR PHOTO -->
-<section class="tour">
-    <!-- Replace with your tour image -->
-    <img src="PLACEHOLDER-TOUR.png" alt="tour show">
-    <p class="tour-caption">Slowdive 2026 tour, Spain</p>
-</section>
+  </footer>
 
 </body>
 </html>
